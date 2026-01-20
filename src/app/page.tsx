@@ -112,7 +112,7 @@ export default function Home() {
 											</span>
 										</div>
 										<p className="text-lg font-light tracking-wide">
-											Dr. [Name]
+											Dr. Daksh Mutreja
 										</p>
 										<p className="text-sm text-gray-400 tracking-wider">
 											PROFESSIONAL HEADSHOT
@@ -126,40 +126,47 @@ export default function Home() {
 						<div className="flex items-center justify-center p-8 lg:p-12">
 							<div className="max-w-lg">
 								<h2 className="text-4xl md:text-5xl font-light text-white mb-4 tracking-wider">
-									DR. [DOCTOR NAME], DDS
+									DR. DAKSH MUTREJA, MDS
 								</h2>
 								<p className="text-lg text-gray-300 italic mb-8 font-light tracking-wide">
-									Licensed Dental Surgeon
+									Oral Medicine & Radiology Specialist |
+									Implantologist
 								</p>
 
 								<hr className="border-gray-600 mb-8" />
 
 								<div className="space-y-4 text-gray-300 leading-relaxed font-light">
 									<p>
-										• Doctor of Dental Surgery (DDS) -
-										University of California, San Francisco
-									</p>
-									<p>• Licensed Dentist since 2008</p>
-									<p>
-										• Member of American Dental Association
-										and California Dental Association
+										• MDS in Oral Medicine and Radiology -
+										Rajarajeswari Dental College, Bangalore
 									</p>
 									<p>
-										• Continuing education in cosmetic and
-										restorative dentistry
+										• Certificate Course in Implantology -
+										RGUHS
 									</p>
 									<p>
-										• Over 15 years of clinical experience
+										• Advanced training in Zygomatic and
+										Pterygoid Implants
+									</p>
+									<p>
+										• Specialist in ALL-ON-X, Sinus Lift,
+										and Ridge Augmentation
+									</p>
+									<p>
+										• Over 8+ years of clinical experience
 										in comprehensive dental care
 									</p>
 									<p>
-										• Specialized training in dental
-										implants and oral surgery
+										• Expert in Oral Diagnosis, Root Canals,
+										Periodontics, and Restorations
 									</p>
 									<p>
-										• Committed to providing gentle,
-										personalized dental care in a
-										comfortable environment
+										• Volunteer work: Placed 70+ implants
+										for underprivileged patients
+									</p>
+									<p>
+										• Scientific Writer with expertise in
+										Medical Communications
 									</p>
 								</div>
 
@@ -353,40 +360,40 @@ export default function Home() {
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 						{[
 							{
-								name: "Sarah Johnson",
+								name: "Abhishek Kumar",
 								rating: 5,
-								text: "Dr. [Name] and the entire team at Dentessa are absolutely wonderful. They made my dental anxiety completely disappear with their caring approach and gentle treatment.",
-								date: "2 weeks ago",
+								text: "I went to Dentessa on a friends' recommendation and shared my concern related to trusting dentists as I met few and couldn't trust anyone because everyone was saying different things. Doctors at Dentessa checked thoroughly and explained each and everything in detail which helped me to take better care of my teeth. I got filing done here, after filling also they followed up multiple times and until I was feeling completely fine they gave full support.",
+								date: "a week ago",
 							},
 							{
-								name: "Michael Chen",
+								name: "Manjula KB",
 								rating: 5,
-								text: "Outstanding service! The office is modern, clean, and the staff is incredibly professional. My teeth cleaning was thorough yet comfortable.",
-								date: "1 month ago",
+								text: "Very good experience. Had multiple dental treatments done. Was having a good feel. Doctor and the staff at the clinic are very helpful and are very cooperative. Fixing appointments & treatment schedules are a cake walk. We recommend this dentist for all ages off people. Best & most flexible & economic place.",
+								date: "5 months ago",
 							},
 							{
-								name: "Emily Rodriguez",
+								name: "Chaithra DS",
 								rating: 5,
-								text: "I've been coming here for 3 years and consistently receive excellent care. The team remembers me and my family, making each visit personal and comfortable.",
+								text: "Dr. Daksh is an exceptionally skilled clinician with remarkable diagnostic efficiency and attention to detail. His ability to assess and plan treatments with accuracy ensures the best outcomes for his patients. He maintains a calm and reassuring approach, making even complex procedures feel comfortable and well-managed.",
+								date: "3 months ago",
+							},
+							{
+								name: "Ranjitha R",
+								rating: 5,
+								text: "I got my root canal done, crown and fillings done. Dr. Daksh and Dr. Prasurjya was really great and they got Zirconia crown ready by a day and were really accommodating. I am happy and grateful. Would definitely recommend this place.",
 								date: "3 weeks ago",
 							},
 							{
-								name: "David Thompson",
+								name: "Meera Chitragar",
 								rating: 5,
-								text: "Had an emergency tooth issue and they fit me in the same day. Dr. [Name] was thorough in explaining the problem and the treatment options.",
-								date: "1 week ago",
+								text: "Dr.Daksh M is an experienced dentist and surgeon. Recently I visited the clinic for root canal treatment (RCT). I am very thankful to Dr Daksh as he took lot of care with lot of patience and treated me well. He is sincere and committed in treating the patients.",
+								date: "2 months ago",
 							},
 							{
-								name: "Lisa Park",
+								name: "Mamta Kumari",
 								rating: 5,
-								text: "The cosmetic work they did on my smile exceeded my expectations. Professional, artistic, and the results look completely natural.",
-								date: "1 month ago",
-							},
-							{
-								name: "Robert Wilson",
-								rating: 5,
-								text: "Great experience for my entire family. They're patient with kids and make dental visits something my children actually look forward to.",
-								date: "2 weeks ago",
+								text: "Visited the doctor to get Root canal done. Professional and courteous staff. Doctor is warm and friendly.",
+								date: "2 months ago",
 							},
 						].map((review, index) => (
 							<div
