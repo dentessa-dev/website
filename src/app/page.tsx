@@ -7,7 +7,7 @@ export default function Home() {
 	return (
 		<main className="min-h-screen bg-white">
 			{/* Hero Section - Full Screen */}
-			<section className="min-h-screen bg-gradient-to-br from-slate-400 via-slate-300 to-blue-200 flex items-center justify-center relative">
+			<section className="min-h-screen bg-gradient-to-br from-slate-600 via-slate-500 to-blue-400 flex items-center justify-center relative overflow-hidden">
 				{/* Navigation */}
 				<nav className="absolute top-0 w-full z-50 pt-2">
 					<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -56,42 +56,127 @@ export default function Home() {
 					</div>
 				</nav>
 
-				{/* Background Pattern or Image */}
+				{/* Enhanced Background Pattern */}
 				<div className="absolute inset-0 opacity-20">
-					<div className="absolute top-20 left-20 w-32 h-32 bg-white/30 rounded-full blur-2xl"></div>
-					<div className="absolute top-40 right-32 w-48 h-48 bg-white/20 rounded-full blur-3xl"></div>
-					<div className="absolute bottom-32 left-1/3 w-64 h-64 bg-white/25 rounded-full blur-3xl"></div>
-					<div className="absolute bottom-20 right-20 w-40 h-40 bg-white/30 rounded-full blur-2xl"></div>
+					<div className="absolute top-20 left-20 w-32 h-32 bg-white/30 rounded-full blur-2xl animate-pulse"></div>
+					<div className="absolute top-40 right-32 w-48 h-48 bg-white/20 rounded-full blur-3xl animate-pulse delay-700"></div>
+					<div className="absolute bottom-32 left-1/3 w-64 h-64 bg-white/25 rounded-full blur-3xl animate-pulse delay-1000"></div>
+					<div className="absolute bottom-20 right-20 w-40 h-40 bg-white/30 rounded-full blur-2xl animate-pulse delay-300"></div>
+					{/* Additional floating elements */}
+					<div className="absolute top-1/2 left-10 w-24 h-24 bg-white/15 rounded-full blur-xl animate-pulse delay-500"></div>
+					<div className="absolute top-3/4 right-10 w-20 h-20 bg-white/20 rounded-full blur-xl animate-pulse delay-1200"></div>
 				</div>
 
-				<div className="text-center z-10">
-					<h1 className="text-white text-4xl md:text-6xl lg:text-7xl font-light tracking-wider mb-8">
-						DENTESSA DENTAL CLINIC
-					</h1>
-					<div className="w-full max-w-2xl mx-auto">
-						<hr className="border-white/60 mb-6" />
-						<p className="text-white text-lg md:text-xl lg:text-2xl font-light tracking-wider">
-							EXCEPTIONAL CARE WITH A BREAKTHROUGH SMILE
-						</p>
-						<hr className="border-white/60 mt-6" />
+				{/* 3D Tooth Render */}
+				<div className="absolute top-32 right-20 hidden lg:block animate-bounce">
+					<div className="relative transform rotate-12">
+						<div className="text-6xl filter drop-shadow-2xl animate-pulse">
+							🦷
+						</div>
+						<div className="absolute -inset-4 bg-white/10 rounded-full blur-xl animate-ping"></div>
 					</div>
 				</div>
 
-				{/* Scroll indicator */}
-				<div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
-					<svg
-						className="w-6 h-6"
-						fill="none"
-						stroke="currentColor"
-						viewBox="0 0 24 24"
-					>
-						<path
-							strokeLinecap="round"
-							strokeLinejoin="round"
-							strokeWidth={2}
-							d="M19 14l-7 7m0 0l-7-7m7 7V3"
-						/>
-					</svg>
+				{/* Main Content with enhanced styling */}
+				<div className="text-center z-10 relative">
+					{/* Animated badge */}
+					<div className="mb-8 inline-block">
+						<div className="bg-white/20 backdrop-blur-sm rounded-full px-6 py-2 border border-white/30 animate-pulse">
+							<span className="text-white/90 text-sm font-light tracking-wider">
+								BANGALORE'S PREMIER DENTAL CLINIC
+							</span>
+						</div>
+					</div>
+
+					<h1 className="text-white text-4xl md:text-6xl lg:text-7xl font-light tracking-wider mb-8 drop-shadow-2xl">
+						DENTESSA DENTAL CLINIC
+					</h1>
+
+					<div className="w-full max-w-3xl mx-auto">
+						<hr className="border-white/60 mb-6" />
+						<p className="text-white text-lg md:text-xl lg:text-2xl font-light tracking-wider mb-4 drop-shadow-lg">
+							EXCEPTIONAL CARE WITH A BREAKTHROUGH SMILE
+						</p>
+						<p className="text-white/80 text-sm md:text-base font-light tracking-wide mb-6 max-w-xl mx-auto">
+							Expert implantology • Advanced diagnostics •
+							Personalized treatment plans
+						</p>
+						<hr className="border-white/60 mb-8" />
+
+						{/* CTA Buttons */}
+						<div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+							<a
+								href="#appointments"
+								className="bg-white/20 backdrop-blur-sm border border-white/30 text-white px-8 py-3 rounded-full font-light tracking-wider transition-all duration-300 hover:bg-white/30 hover:scale-105 hover:shadow-xl"
+							>
+								BOOK CONSULTATION
+							</a>
+							<a
+								href="#about"
+								className="bg-transparent border-2 border-white/50 text-white px-8 py-3 rounded-full font-light tracking-wider transition-all duration-300 hover:bg-white/10 hover:border-white/70 hover:scale-105"
+							>
+								MEET DR. DAKSH
+							</a>
+						</div>
+
+						{/* Stats */}
+						<div className="mt-12 grid grid-cols-3 gap-8 max-w-md mx-auto">
+							<div className="text-center">
+								<div className="text-2xl font-light text-white mb-1">
+									12+
+								</div>
+								<div className="text-xs text-white/70 tracking-wide">
+									YEARS EXP
+								</div>
+							</div>
+							<div className="text-center border-l border-r border-white/30 px-4">
+								<div className="text-2xl font-light text-white mb-1">
+									70+
+								</div>
+								<div className="text-xs text-white/70 tracking-wide">
+									IMPLANTS
+								</div>
+							</div>
+							<div className="text-center">
+								<div className="text-2xl font-light text-white mb-1">
+									500+
+								</div>
+								<div className="text-xs text-white/70 tracking-wide">
+									PATIENTS
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				{/* Enhanced Scroll indicator */}
+				<div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce z-20">
+					<div className="flex flex-col items-center">
+						<span className="text-xs font-light tracking-wider mb-2 opacity-80">
+							SCROLL
+						</span>
+						<svg
+							className="w-6 h-6 animate-bounce"
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+						>
+							<path
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								strokeWidth={1.5}
+								d="M19 14l-7 7m0 0l-7-7m7 7V3"
+							/>
+						</svg>
+					</div>
+				</div>
+
+				{/* Floating particles */}
+				<div className="absolute inset-0 overflow-hidden">
+					<div className="absolute top-1/4 left-1/4 w-1 h-1 bg-white/40 rounded-full animate-ping delay-1000"></div>
+					<div className="absolute top-3/4 left-3/4 w-1 h-1 bg-white/40 rounded-full animate-ping delay-2000"></div>
+					<div className="absolute top-1/2 left-1/6 w-2 h-2 bg-white/30 rounded-full animate-ping delay-1500"></div>
+					<div className="absolute bottom-1/3 right-1/4 w-1 h-1 bg-white/50 rounded-full animate-ping delay-2500"></div>
 				</div>
 			</section>
 
