@@ -1,6 +1,7 @@
 import Image from "next/image";
 import MobileMenu from "../components/MobileMenu";
 import AppointmentForm from "../components/AppointmentForm";
+import { brotliDecompress } from "zlib";
 
 export default function Home() {
 	return (
@@ -108,14 +109,15 @@ export default function Home() {
 									<div className="text-center text-gray-300 p-8">
 										<div className="w-32 h-32 bg-gray-500 rounded-full mx-auto mb-4 flex items-center justify-center">
 											<span className="text-4xl text-gray-300">
-												👨‍⚕️
+												<img
+													src="https://media.licdn.com/dms/image/v2/D5603AQFVjy4Lc4a8NA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1699522182410?e=1770854400&v=beta&t=dsp1GqQZjYNZSYK89dmXV6mGaUuSSi6fGqhRiVy5T5s"
+													alt="Dr. Daksh"
+													className="w-48 rounded-2xl object-cover shadow-lg transition duration-300 ease-out hover:-translate-y-2 hover:shadow-2xl"
+												/>
 											</span>
 										</div>
 										<p className="text-lg font-light tracking-wide">
 											Dr. Daksh Mutreja
-										</p>
-										<p className="text-sm text-gray-400 tracking-wider">
-											PROFESSIONAL HEADSHOT
 										</p>
 									</div>
 								</div>
@@ -171,23 +173,6 @@ export default function Home() {
 								</div>
 
 								<hr className="border-gray-600 mt-8 mb-6" />
-
-								<div className="flex items-center space-x-6">
-									<div className="text-center">
-										<p className="text-2xl font-light text-white tracking-wider">
-											CONSULTATION SESSION
-										</p>
-										<p className="text-xl text-amber-400">
-											$150
-										</p>
-									</div>
-									<div className="text-center">
-										<p className="text-sm text-gray-400 uppercase tracking-wider font-light">
-											Please inquire for other types of
-											treatment options
-										</p>
-									</div>
-								</div>
 							</div>
 						</div>
 					</div>
@@ -295,25 +280,11 @@ export default function Home() {
 											PHONE
 										</p>
 										<p className="text-gray-600">
-											(555) 123-4567
+											+91 86606 03183
 										</p>
 									</div>
 								</div>
-								<div className="flex items-center space-x-4">
-									<div className="w-12 h-12 bg-linear-to-br from-amber-200 to-stone-300 rounded-full flex items-center justify-center">
-										<span className="text-white text-xl">
-											✉️
-										</span>
-									</div>
-									<div>
-										<p className="font-medium text-gray-800 tracking-wide">
-											EMAIL
-										</p>
-										<p className="text-gray-600">
-											info@dentessa.com
-										</p>
-									</div>
-								</div>
+
 								<div className="flex items-center space-x-4">
 									<div className="w-12 h-12 bg-linear-to-br from-amber-200 to-stone-300 rounded-full flex items-center justify-center">
 										<span className="text-white text-xl">
@@ -325,7 +296,8 @@ export default function Home() {
 											HOURS
 										</p>
 										<p className="text-gray-600">
-											Monday - Friday: 8:00 AM - 6:00 PM
+											Monday - Saturday: 10:15 AM - 9:30
+											PM
 										</p>
 									</div>
 								</div>
@@ -428,24 +400,10 @@ export default function Home() {
 						</p>
 						<div className="flex justify-center space-x-8">
 							<a
-								href="#"
+								href="https://www.google.com/search?hl=en-IN&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOVLiLLcllup_tXGivgpVHIclZFkN_mDKi-Vtl3LACeAi_zFaP0Cpvx6dJ3livqYM0aveOZ1_RI12jLstFyVOkKT1-dTffJU8XV1u1XxqkakNlT5MK_VQ99E2uRkOGoo2M0ZtAFY%3D&q=Dentessa-Dental+Clinic+And+Implant+Center+Reviews&sa=X&aic=0#lrd=0x3bae3ef7561a799d:0xacd5e2e44617c5e0,3,,,,"
 								className="text-gray-600 hover:text-gray-800 font-light tracking-wider transition-colors"
 							>
 								GOOGLE REVIEWS
-							</a>
-							<span className="text-gray-300">|</span>
-							<a
-								href="#"
-								className="text-gray-600 hover:text-gray-800 font-light tracking-wider transition-colors"
-							>
-								YELP
-							</a>
-							<span className="text-gray-300">|</span>
-							<a
-								href="#"
-								className="text-gray-600 hover:text-gray-800 font-light tracking-wider transition-colors"
-							>
-								FACEBOOK
 							</a>
 						</div>
 					</div>
@@ -466,10 +424,9 @@ export default function Home() {
 							</h2>
 							<hr className="w-24 border-gray-400 mb-8" />
 							<p className="text-xl text-gray-600 font-light leading-relaxed mb-12">
-								Conveniently located in the heart of San
-								Francisco, our modern clinic provides a
-								comfortable environment for all your dental
-								needs.
+								Conveniently located in the heart of BANGALORE,
+								our modern clinic provides a comfortable
+								environment for all your dental needs.
 							</p>
 							<div className="space-y-8">
 								<div>
@@ -477,11 +434,9 @@ export default function Home() {
 										ADDRESS
 									</h4>
 									<p className="text-gray-600 font-light leading-relaxed">
-										456 Mission Street
-										<br />
-										Suite 300
-										<br />
-										San Francisco, CA 94105
+										1/4, Basement, BHEL Layout Main Road,
+										Rajarajeshwari Nagar, Bangalore - 98,
+										Landmark: RR Nagar Temple, Bangalore
 									</p>
 								</div>
 								<div>
@@ -489,9 +444,7 @@ export default function Home() {
 										CONTACT
 									</h4>
 									<p className="text-gray-600 font-light">
-										Phone: (555) 123-4567
-										<br />
-										Email: info@dentessa.com
+										Phone: +91 86606 03183
 									</p>
 								</div>
 								<div>
@@ -500,9 +453,10 @@ export default function Home() {
 									</h4>
 									<div className="text-gray-600 font-light leading-relaxed">
 										<p>
-											Monday - Friday: 8:00 AM - 6:00 PM
+											Monday - Saturday: 10:15 AM - 9:30
+											PM
 										</p>
-										<p>Saturday: 9:00 AM - 4:00 PM</p>
+
 										<p>Sunday: Closed</p>
 									</div>
 								</div>
@@ -576,20 +530,14 @@ export default function Home() {
 							<p className="text-gray-300 mb-6 font-light leading-relaxed">
 								Your trusted partner in dental health. Providing
 								exceptional care with a personal touch for over
-								15 years.
+								12 years.
 							</p>
 							<div className="flex space-x-6">
 								<a
-									href="#"
+									href="https://www.linkedin.com/in/dr-daksh-mutreja-597571a8/"
 									className="text-gray-400 hover:text-white transition-colors font-light tracking-wide"
 								>
-									FACEBOOK
-								</a>
-								<a
-									href="#"
-									className="text-gray-400 hover:text-white transition-colors font-light tracking-wide"
-								>
-									INSTAGRAM
+									LINKEDIN
 								</a>
 							</div>
 						</div>
@@ -646,19 +594,14 @@ export default function Home() {
 							</h4>
 							<div className="text-gray-300 space-y-3 font-light leading-relaxed">
 								<p>
-									456 Mission Street, Suite 300
+									1/4, Basement, BHEL Layout Main Road,
+									Rajarajeshwari Nagar, Bangalore - 98,
+									Landmark: RR Nagar Temple, Bangalore
 									<br />
 									San Francisco, CA 94105
 								</p>
-								<p>(555) 123-4567</p>
-								<p>info@dentessa.com</p>
-								<p className="pt-3">
-									<span className="font-medium tracking-wide">
-										EMERGENCY:
-									</span>
-									<br />
-									(555) 911-DENT
-								</p>
+								<p>+91 86606 03183</p>
+								<p className="pt-3"></p>
 							</div>
 						</div>
 					</div>
