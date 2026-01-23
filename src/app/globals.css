@@ -1,5 +1,24 @@
 @import "tailwindcss";
 
+/* Cocogoose font for brand name/logo */
+@font-face {
+	font-family: 'Cocogoose';
+	src: url('/Cocogoose_Pro_Light-trial.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* Tailwind v4 theme configuration */
+@theme {
+	--color-brand-blue: #23ABDF;
+	--color-brand-green: #17B406;
+	--color-brand-silver: #C6C6C6;
+	--color-brand-navy: #08435E;
+
+	--font-family-display: 'Cocogoose', 'Segoe UI', system-ui, sans-serif;
+}
+
 :root {
 	--background: #ffffff;
 	--foreground: #171717;
@@ -16,7 +35,7 @@ body {
 	background: var(--background);
 	color: var(--foreground);
 	font-family:
-		-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+		'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue',
 		Arial, sans-serif;
 	line-height: 1.6;
 }
@@ -26,7 +45,7 @@ html {
 	scroll-behavior: smooth;
 }
 
-/* Custom scrollbar */
+/* Custom scrollbar with brand colors */
 ::-webkit-scrollbar {
 	width: 8px;
 }
@@ -36,7 +55,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-	background: #c1c1c1;
+	background: #C6C6C6; /* brand-silver */
 	border-radius: 4px;
 }
 
@@ -44,12 +63,12 @@ html {
 	background: #a8a8a8;
 }
 
-/* Form focus states */
+/* Form focus states with brand colors */
 input:focus,
 select:focus,
 textarea:focus {
 	outline: none;
-	box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+	box-shadow: 0 0 0 3px rgba(35, 171, 223, 0.2); /* brand-blue with opacity */
 }
 
 /* Navigation backdrop blur effect */
