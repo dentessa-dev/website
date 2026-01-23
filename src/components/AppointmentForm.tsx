@@ -66,7 +66,7 @@ export default function AppointmentForm() {
 						value={formData.name}
 						onChange={handleChange}
 						required
-						className="w-full bg-transparent border-0 border-b border-gray-300 py-3 px-0 text-gray-800 placeholder-gray-400 focus:outline-none focus:border-amber-500 transition-colors font-light"
+						className="w-full bg-transparent border-0 border-b border-gray-300 py-3 px-0 text-gray-800 placeholder-gray-400 focus:outline-none focus:border-brand-blue transition-colors font-light"
 						placeholder="Full Name"
 					/>
 				</div>
@@ -79,7 +79,7 @@ export default function AppointmentForm() {
 						value={formData.email}
 						onChange={handleChange}
 						required
-						className="w-full bg-transparent border-0 border-b border-gray-300 py-3 px-0 text-gray-800 placeholder-gray-400 focus:outline-none focus:border-amber-500 transition-colors font-light"
+						className="w-full bg-transparent border-0 border-b border-gray-300 py-3 px-0 text-gray-800 placeholder-gray-400 focus:outline-none focus:border-brand-blue transition-colors font-light"
 						placeholder="Email Address"
 					/>
 				</div>
@@ -92,7 +92,7 @@ export default function AppointmentForm() {
 						value={formData.phone}
 						onChange={handleChange}
 						required
-						className="w-full bg-transparent border-0 border-b border-gray-300 py-3 px-0 text-gray-800 placeholder-gray-400 focus:outline-none focus:border-amber-500 transition-colors font-light"
+						className="w-full bg-transparent border-0 border-b border-gray-300 py-3 px-0 text-gray-800 placeholder-gray-400 focus:outline-none focus:border-brand-blue transition-colors font-light"
 						placeholder="Phone Number"
 					/>
 				</div>
@@ -104,7 +104,7 @@ export default function AppointmentForm() {
 						value={formData.service}
 						onChange={handleChange}
 						required
-						className="w-full bg-transparent border-0 border-b border-gray-300 py-3 px-0 text-gray-800 focus:outline-none focus:border-amber-500 transition-colors font-light appearance-none"
+						className="w-full bg-transparent border-0 border-b border-gray-300 py-3 px-0 text-gray-800 focus:outline-none focus:border-brand-blue transition-colors font-light appearance-none"
 					>
 						<option value="" className="text-gray-400">
 							Select a service
@@ -126,7 +126,7 @@ export default function AppointmentForm() {
 						value={formData.message}
 						onChange={handleChange}
 						rows={4}
-						className="w-full bg-transparent border-0 border-b border-gray-300 py-3 px-0 text-gray-800 placeholder-gray-400 focus:outline-none focus:border-amber-500 transition-colors resize-none font-light"
+						className="w-full bg-transparent border-0 border-b border-gray-300 py-3 px-0 text-gray-800 placeholder-gray-400 focus:outline-none focus:border-brand-blue transition-colors resize-none font-light"
 						placeholder="Additional information or questions (optional)"
 					></textarea>
 				</div>
@@ -137,7 +137,7 @@ export default function AppointmentForm() {
 					className={`w-full py-3 px-8 font-light tracking-wider transition-colors ${
 						isSubmitting
 							? "bg-gray-400 text-white cursor-not-allowed"
-							: "bg-amber-600 hover:bg-amber-700 text-white"
+							: "bg-brand-green hover:bg-brand-green/90 text-white"
 					}`}
 				>
 					{isSubmitting ? "SUBMITTING..." : "REQUEST APPOINTMENT"}

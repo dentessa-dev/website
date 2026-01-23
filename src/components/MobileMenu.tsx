@@ -42,45 +42,38 @@ export default function MobileMenu() {
 
 			{/* Mobile Menu */}
 			{isOpen && (
-				<div className="absolute top-16 left-0 right-0 bg-white/95 backdrop-blur-md border-t border-white/30 shadow-lg">
-					<div className="py-2">
-						<a
-							href="#about"
-							className="block px-4 py-3 text-gray-700 hover:bg-gray-100 hover:text-gray-900 font-light tracking-wide"
-							onClick={closeMenu}
-						>
+				<>
+					{/* Backdrop overlay */}
+					<div
+						className="fixed inset-0 top-24 bg-black/30 backdrop-blur-sm z-40"
+						onClick={closeMenu}
+					/>
+					<div className="fixed top-24 left-0 right-0 bg-brand-navy border-t border-brand-blue/30 shadow-lg z-50">
+					<div className="py-4 px-4 space-y-1">
+						<a href="#about" className="block px-4 py-3 text-white hover:text-brand-blue font-medium tracking-wide" onClick={closeMenu}>
 							ABOUT
 						</a>
-						<a
-							href="#services"
-							className="block px-4 py-3 text-gray-700 hover:bg-gray-100 hover:text-gray-900 font-light tracking-wide"
-							onClick={closeMenu}
-						>
+						<a href="#services" className="block px-4 py-3 text-white hover:text-brand-blue font-medium tracking-wide" onClick={closeMenu}>
 							SERVICES
 						</a>
-						<a
-							href="#appointments"
-							className="block px-4 py-3 text-gray-700 hover:bg-gray-100 hover:text-gray-900 font-light tracking-wide"
-							onClick={closeMenu}
-						>
+						<a href="#technology" className="block px-4 py-3 text-white hover:text-brand-blue font-medium tracking-wide" onClick={closeMenu}>
+							TECHNOLOGY
+						</a>
+						<a href="#appointments" className="block px-4 py-3 text-white hover:text-brand-blue font-medium tracking-wide" onClick={closeMenu}>
 							APPOINTMENTS
 						</a>
-						<a
-							href="#reviews"
-							className="block px-4 py-3 text-gray-700 hover:bg-gray-100 hover:text-gray-900 font-light tracking-wide"
-							onClick={closeMenu}
-						>
+						<a href="#reviews" className="block px-4 py-3 text-white hover:text-brand-blue font-medium tracking-wide" onClick={closeMenu}>
 							REVIEWS
 						</a>
-						<a
-							href="#contact"
-							className="block px-4 py-3 text-gray-700 hover:bg-gray-100 hover:text-gray-900 font-light tracking-wide"
-							onClick={closeMenu}
-						>
+						<a href="#contact" className="block px-4 py-3 text-white hover:text-brand-blue font-medium tracking-wide" onClick={closeMenu}>
 							CONTACT
+						</a>
+						<a href="#appointments" className="block mx-4 mt-4 bg-brand-green text-white text-center py-3 rounded font-medium tracking-wide" onClick={closeMenu}>
+							BOOK NOW
 						</a>
 					</div>
 				</div>
+				</>
 			)}
 		</div>
 	);
