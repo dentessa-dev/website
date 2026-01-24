@@ -20,33 +20,35 @@ export default function Home() {
 	return (
 		<main className="min-h-screen bg-gray-50">
 			{/* Custom CSS for animations */}
-			<style jsx global>{`
-				.scroll-animate {
-					opacity: 0;
-					transform: translateY(30px);
-					transition: all 1.2s ease-out;
-				}
-				.animate-slide-up {
-					opacity: 1 !important;
-					transform: translateY(0) !important;
-				}
-				@keyframes float {
-					0%,
-					100% {
-						transform: translateY(0px);
+			<style jsx global>
+				{`
+					.scroll-animate {
+						opacity: 0;
+						transform: translateY(30px);
+						transition: all 1.2s ease-out;
 					}
-					50% {
-						transform: translateY(-10px);
+					.animate-slide-up {
+						opacity: 1 !important;
+						transform: translateY(0) !important;
 					}
-				}
-				.animate-float {
-					animation: float 10s ease-in-out infinite;
-				}
-				.animate-float-delayed {
-					animation: float 10s ease-in-out infinite;
-					animation-delay: 3s;
-				}
-			`}</style>
+					@keyframes float {
+						0%,
+						100% {
+							transform: translateY(0px);
+						}
+						50% {
+							transform: translateY(-10px);
+						}
+					}
+					.animate-float {
+						animation: float 10s ease-in-out infinite;
+					}
+					.animate-float-delayed {
+						animation: float 10s ease-in-out infinite;
+						animation-delay: 3s;
+					}
+				`}
+			</style>
 
 			<HeroSection />
 			<AboutSection />
