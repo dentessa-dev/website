@@ -49,30 +49,58 @@ export default function MobileMenu() {
 						onClick={closeMenu}
 					/>
 					<div className="fixed top-24 left-0 right-0 bg-brand-navy border-t border-brand-blue/30 shadow-lg z-50">
-					<div className="py-4 px-4 space-y-1">
-						<a href="#about" className="block px-4 py-3 text-white hover:text-brand-blue font-medium tracking-wide" onClick={closeMenu}>
-							ABOUT
-						</a>
-						<a href="#services" className="block px-4 py-3 text-white hover:text-brand-blue font-medium tracking-wide" onClick={closeMenu}>
-							SERVICES
-						</a>
-						<a href="#technology" className="block px-4 py-3 text-white hover:text-brand-blue font-medium tracking-wide" onClick={closeMenu}>
-							TECHNOLOGY
-						</a>
-						<a href="#appointments" className="block px-4 py-3 text-white hover:text-brand-blue font-medium tracking-wide" onClick={closeMenu}>
-							APPOINTMENTS
-						</a>
-						<a href="#reviews" className="block px-4 py-3 text-white hover:text-brand-blue font-medium tracking-wide" onClick={closeMenu}>
-							REVIEWS
-						</a>
-						<a href="#contact" className="block px-4 py-3 text-white hover:text-brand-blue font-medium tracking-wide" onClick={closeMenu}>
-							CONTACT
-						</a>
-						<a href="#appointments" className="block mx-4 mt-4 bg-brand-green text-white text-center py-3 rounded font-medium tracking-wide" onClick={closeMenu}>
-							BOOK NOW
-						</a>
+						<div className="py-4 px-4 space-y-1">
+							<a
+								href="#about"
+								className="block px-4 py-3 text-white hover:text-brand-blue font-medium tracking-wide"
+								onClick={closeMenu}
+							>
+								ABOUT
+							</a>
+							<a
+								href="#services"
+								className="block px-4 py-3 text-white hover:text-brand-blue font-medium tracking-wide"
+								onClick={closeMenu}
+							>
+								SERVICES
+							</a>
+							<a
+								href="#technology"
+								className="block px-4 py-3 text-white hover:text-brand-blue font-medium tracking-wide"
+								onClick={closeMenu}
+							>
+								TECHNOLOGY
+							</a>
+							<a
+								href="#appointments"
+								className="block px-4 py-3 text-white hover:text-brand-blue font-medium tracking-wide"
+								onClick={closeMenu}
+							>
+								APPOINTMENTS
+							</a>
+							<a
+								href="#reviews"
+								className="block px-4 py-3 text-white hover:text-brand-blue font-medium tracking-wide"
+								onClick={closeMenu}
+							>
+								REVIEWS
+							</a>
+							<a
+								href="#contact"
+								className="block px-4 py-3 text-white hover:text-brand-blue font-medium tracking-wide"
+								onClick={closeMenu}
+							>
+								CONTACT
+							</a>
+							<a
+								href="#appointments"
+								className="block mx-4 mt-4 bg-brand-green text-white text-center py-3 rounded font-medium tracking-wide"
+								onClick={closeMenu}
+							>
+								BOOK NOW
+							</a>
+						</div>
 					</div>
-				</div>
 				</>
 			)}
 		</div>

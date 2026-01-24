@@ -20,7 +20,7 @@ export default function Home() {
 	return (
 		<main className="min-h-screen bg-gray-50">
 			{/* Custom CSS for animations */}
-			<style jsx global>
+			<style>
 				{`
 					.scroll-animate {
 						opacity: 0;
