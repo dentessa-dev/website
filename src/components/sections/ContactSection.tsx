@@ -1,6 +1,9 @@
 export default function ContactSection() {
 	return (
-		<section id="contact" className="min-h-screen bg-brand-navy flex items-center">
+		<section
+			id="contact"
+			className="min-h-screen bg-brand-navy flex items-center"
+		>
 			<div className="w-full max-w-6xl mx-auto px-8 py-16">
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 					{/* Left Column - Info */}
@@ -10,30 +13,49 @@ export default function ContactSection() {
 						</h2>
 						<hr className="w-24 border-white/40 mb-8" />
 						<p className="text-xl text-white/80 font-light leading-relaxed mb-12">
-							Conveniently located in the heart of BANGALORE, our modern clinic provides a comfortable environment for all your dental needs.
+							Conveniently located in the heart of BANGALORE, our
+							modern clinic provides a comfortable environment for
+							all your dental needs.
 						</p>
 						<div className="space-y-8">
 							<div>
-								<h4 className="text-lg font-medium text-white mb-3 tracking-wider">ADDRESS</h4>
+								<h4 className="text-lg font-medium text-white mb-3 tracking-wider">
+									ADDRESS
+								</h4>
 								<p className="text-white/70 font-light leading-relaxed">
-									1/4, Basement, BHEL Layout Main Road, Rajarajeshwari Nagar, Bangalore - 98, Landmark: RR Nagar Temple, Bangalore
+									1/4, Basement, BHEL Layout Main Road,
+									Rajarajeshwari Nagar, Bangalore - 98,
+									Landmark: RR Nagar Temple, Bangalore
 								</p>
 							</div>
 							<div>
-								<h4 className="text-lg font-medium text-white mb-3 tracking-wider">CONTACT</h4>
-								<p className="text-white/70 font-light">Phone: +91 86606 03183</p>
+								<h4 className="text-lg font-medium text-white mb-3 tracking-wider">
+									CONTACT
+								</h4>
+								<p className="text-white/70 font-light">
+									Phone: +91 86606 03183
+								</p>
+								<p className="text-white/70 font-light">
+									Phone: +91 86187 44043
+								</p>
 							</div>
 							<div>
-								<h4 className="text-lg font-medium text-white mb-3 tracking-wider">OFFICE HOURS</h4>
+								<h4 className="text-lg font-medium text-white mb-3 tracking-wider">
+									OFFICE HOURS
+								</h4>
 								<div className="text-white/70 font-light leading-relaxed">
-									<p>Monday - Saturday: 10:15 AM - 9:30 PM</p>
+									<p>Monday - Saturday: 11:30 AM - 9:00 PM</p>
 									<p>Sunday: Closed</p>
 								</div>
 							</div>
 							<div>
-								<h4 className="text-lg font-medium text-white mb-3 tracking-wider">PARKING</h4>
+								<h4 className="text-lg font-medium text-white mb-3 tracking-wider">
+									PARKING
+								</h4>
 								<p className="text-white/70 font-light leading-relaxed">
-									Complimentary parking available in our building&apos;s secure parking garage. Street parking is also available.
+									Complimentary parking available in our
+									building&apos;s secure parking garage.
+									Street parking is also available.
 								</p>
 							</div>
 						</div>
@@ -63,13 +85,38 @@ export default function ContactSection() {
 								rel="noopener noreferrer"
 								className="inline-flex items-center text-white/70 hover:text-white font-light text-sm transition-colors tracking-wider"
 							>
-								<svg className="w-5 h-5 mr-2 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-									<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-									<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+								<svg
+									className="w-5 h-5 mr-2 text-brand-blue"
+									fill="none"
+									stroke="currentColor"
+									viewBox="0 0 24 24"
+								>
+									<path
+										strokeLinecap="round"
+										strokeLinejoin="round"
+										strokeWidth={1.5}
+										d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+									/>
+									<path
+										strokeLinecap="round"
+										strokeLinejoin="round"
+										strokeWidth={1.5}
+										d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+									/>
 								</svg>
 								OPEN IN GOOGLE MAPS FOR DIRECTIONS
-								<svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-									<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+								<svg
+									className="ml-2 w-4 h-4"
+									fill="none"
+									stroke="currentColor"
+									viewBox="0 0 24 24"
+								>
+									<path
+										strokeLinecap="round"
+										strokeLinejoin="round"
+										strokeWidth={2}
+										d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+									/>
 								</svg>
 							</a>
 						</div>

@@ -40,6 +40,9 @@ export default function AppointmentsSection() {
 									<p className="text-white/70">
 										+91 86606 03183
 									</p>
+									<p className="text-white/70">
+										+91 86187 44043
+									</p>
 								</div>
 							</div>
 
@@ -64,7 +67,7 @@ export default function AppointmentsSection() {
 										HOURS
 									</p>
 									<p className="text-white/70">
-										Monday - Saturday: 10:15 AM - 9:30 PM
+										Monday - Saturday: 11:30 AM - 9:00 PM
 									</p>
 								</div>
 							</div>
