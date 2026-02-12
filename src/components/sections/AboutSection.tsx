@@ -7,7 +7,7 @@ export default function AboutSection() {
 					<div className="order-2 lg:order-1 scroll-animate">
 						<div className="relative mx-4 lg:mx-0">
 							<img
-								src="https://media.licdn.com/dms/image/v2/D5603AQFVjy4Lc4a8NA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1699522182410?e=1770854400&v=beta&t=dsp1GqQZjYNZSYK89dmXV6mGaUuSSi6fGqhRiVy5T5s"
+								src="/daksh.png"
 								alt="Dr. Daksh Mutreja"
 								className="w-full aspect-[3/4] lg:aspect-[4/5] object-cover object-center"
 							/>

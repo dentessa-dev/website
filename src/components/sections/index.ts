@@ -1,10 +1,12 @@
 export { default as HeroSection } from "./HeroSection";
 export { default as AboutSection } from "./AboutSection";
 export { default as ServicesSection } from "./ServicesSection";
+export { default as RootCanalServicesSection } from "./RootCanalServicesSection";
 export { default as TechnologySection } from "./TechnologySection";
 export { default as AdvancedProceduresSection } from "./AdvancedProceduresSection";
 export { default as StatisticsSection } from "./StatisticsSection";
 export { default as AppointmentsSection } from "./AppointmentsSection";
+export { default as TeamSection } from "./TeamSection";
 export { default as ReviewsSection } from "./ReviewsSection";
 export { default as ContactSection } from "./ContactSection";
 export { default as Footer } from "./Footer";

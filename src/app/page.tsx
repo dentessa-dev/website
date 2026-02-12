@@ -5,10 +5,12 @@ import {
 	HeroSection,
 	AboutSection,
 	ServicesSection,
+	RootCanalServicesSection,
 	TechnologySection,
 	AdvancedProceduresSection,
 	StatisticsSection,
 	AppointmentsSection,
+	TeamSection,
 	ReviewsSection,
 	ContactSection,
 	Footer,
@@ -53,10 +55,12 @@ export default function Home() {
 			<HeroSection />
 			<AboutSection />
 			<ServicesSection />
+			<RootCanalServicesSection />
 			{/* <TechnologySection /> */}
 			<AdvancedProceduresSection />
 			<StatisticsSection />
 			<AppointmentsSection />
+			<TeamSection />
 			<ReviewsSection />
 			<ContactSection />
 			<Footer />

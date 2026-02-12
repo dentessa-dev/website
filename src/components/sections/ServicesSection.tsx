@@ -37,8 +37,7 @@ export default function ServicesSection() {
 							Our Services
 						</p>
 						<h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
-							Implant Specialities (make another page same as this
-							with name root canals and genetal dentist services)
+							Implant Specialities
 						</h2>
 						<p className="text-white/70 text-lg leading-relaxed">
 							From single tooth replacement to complete oral

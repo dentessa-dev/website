@@ -47,7 +47,11 @@ function StarRating({ rating }: { rating: number }) {
 	return (
 		<div className="flex text-brand-blue text-sm space-x-1">
 			{[...Array(rating)].map((_, i) => (
-				<svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+				<svg
+					key={i}
+					className="w-4 h-4 fill-current"
+					viewBox="0 0 24 24"
+				>
 					<path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
 				</svg>
 			))}
@@ -65,7 +69,8 @@ export default function ReviewsSection() {
 					</h2>
 					<hr className="w-32 border-gray-400 mx-auto mb-12" />
 					<p className="text-xl text-gray-600 font-light max-w-2xl mx-auto leading-relaxed">
-						Discover what our patients are saying about their experience at Dentessa Dental Clinic
+						Discover what our patients are saying about their
+						experience at Dentessa Dental Clinic
 					</p>
 				</div>
 
@@ -103,9 +108,20 @@ export default function ReviewsSection() {
 					<div className="flex justify-center space-x-8">
 						<a
 							href="https://www.google.com/search?hl=en-IN&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOVLiLLcllup_tXGivgpVHIclZFkN_mDKi-Vtl3LACeAi_zFaP0Cpvx6dJ3livqYM0aveOZ1_RI12jLstFyVOkKT1-dTffJU8XV1u1XxqkakNlT5MK_VQ99E2uRkOGoo2M0ZtAFY%3D&q=Dentessa-Dental+Clinic+And+Implant+Center+Reviews&sa=X&aic=0#lrd=0x3bae3ef7561a799d:0xacd5e2e44617c5e0,3,,,,"
+							target="_blank"
+							rel="noopener noreferrer"
 							className="text-gray-600 hover:text-brand-blue font-light tracking-wider transition-colors"
 						>
 							GOOGLE REVIEWS
+						</a>
+						<span className="text-gray-400">|</span>
+						<a
+							href="https://www.practo.com/bangalore/clinic/m-s-dental-care-2-konanakunte-1"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="text-gray-600 hover:text-brand-blue font-light tracking-wider transition-colors"
+						>
+							PRACTO REVIEWS
 						</a>
 					</div>
 				</div>
