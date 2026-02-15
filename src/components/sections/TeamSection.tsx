@@ -25,7 +25,7 @@ const teamMembers = [
 		title: "General Dentist",
 		qualifications: "BDS",
 		experience: "16 years experience",
-		image: "/subhash.jpeg", // Using subhash.jpeg as placeholder, can be updated if needed
+		image: "/milano.jpeg",
 		specialties: [
 			"Fixed Prosthodontics",
 			"Tooth Reshaping",
@@ -36,6 +36,27 @@ const teamMembers = [
 		],
 		description:
 			"Experienced general dentist specializing in prosthodontics, laser dentistry, and comprehensive dental care.",
+	},
+	{
+		name: "Dr. Subash Gotla",
+		title: "Orthodontist",
+		qualifications: "BDS, MDS - Orthodontics",
+		experience: "12 years experience",
+		image: "/subhash.jpeg",
+		specialties: [
+			"Traditional Braces",
+			"Invisalign Provider",
+			"Digital Corrections",
+			"Growth Modifications",
+			"Interdisciplinary Treatments",
+			"Orthognathic Surgical Cases",
+			"Pediatric Orthodontics",
+			"Adult Orthodontics",
+			"Myofunctional Therapy",
+			"Fixed Orthodontics",
+		],
+		description:
+			"Comprehensive orthodontic specialist with 12 years of experience delivering orthodontic care to pediatric and adult patients. Treated more than 3000+ cases of fixed orthodontics and myofunctional therapy. Invisalign certified doctor with expertise in traditional braces, digital corrections, and growth modifications.",
 	},
 ];
 
@@ -60,7 +81,7 @@ export default function TeamSection() {
 				</div>
 
 				{/* Team Members Grid */}
-				<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
 					{teamMembers.map((member, index) => (
 						<div
 							key={index}
@@ -72,7 +93,7 @@ export default function TeamSection() {
 									<img
 										src={member.image}
 										alt={member.name}
-										className="w-full h-full object-cover object-center rounded-full border-4 border-white shadow-lg"
+										className="w-full h-full object-cover object-top rounded-full border-4 border-white shadow-lg"
 									/>
 									<div className="absolute inset-0 bg-linear-to-t from-brand-navy/10 to-transparent rounded-full"></div>
 								</div>
