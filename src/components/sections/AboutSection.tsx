@@ -4,29 +4,45 @@ export default function AboutSection() {
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
 					{/* Image - Shows second on mobile, first on desktop */}
-					<div className="order-2 lg:order-1 scroll-animate">
+					<div className="order-1 lg:order-1 scroll-animate">
 						<div className="relative mx-4 lg:mx-0">
+							<div className="absolute top-4 right-4 z-10 rounded-full border border-white/30 bg-white/25 px-4 py-2 backdrop-blur-xl shadow-[0_8px_32px_rgba(15,23,42,0.18)]">
+								<p className="text-xs lg:text-sm font-semibold tracking-widest uppercase text-white/95">
+									Meet Your Doctor
+								</p>
+							</div>
+
 							<img
 								src="/daksh.png"
 								alt="Dr. Daksh Mutreja"
-								className="w-full aspect-[3/4] lg:aspect-[4/5] object-cover object-center"
+								className="w-full aspect-[3/4] lg:aspect-[4/5] object-cover object-center rounded-3xl"
 							/>
+							<div className="absolute left-4 right-4 bottom-4 rounded-2xl border border-white/30 bg-white/25 px-4 py-4 backdrop-blur-xl shadow-[0_12px_40px_rgba(15,23,42,0.22)] lg:left-6 lg:right-6 lg:bottom-6 lg:max-w-xl lg:px-6 lg:py-5">
+								<h2 className="font-display text-2xl lg:text-3xl font-bold text-white leading-tight">
+									Dr. Daksh Mutreja
+								</h2>
+								<p className="mt-1 text-xs lg:text-sm font-medium text-white/90">
+									MDS, Oral Medicine & Radiology | PG
+									certificate course in implantology,
+									Karnataka
+								</p>
+							</div>
 							{/* Accent border - hidden on mobile */}
 							<div className="hidden lg:block absolute -bottom-4 -right-4 w-full h-full border-2 border-brand-blue -z-10"></div>
 						</div>
 					</div>
 
 					{/* Content - Shows first on mobile, second on desktop */}
-					<div className="order-1 lg:order-2 scroll-animate">
-						<p className="text-brand-blue text-sm font-semibold tracking-widest uppercase mb-4">
+					<div className="order-2 lg:order-2 scroll-animate">
+						<p className="hidden text-brand-blue text-sm font-semibold tracking-widest uppercase mb-4">
 							Meet Your Doctor
 						</p>
 
-						<h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-brand-navy leading-tight mb-4">
+						<h2 className="hidden font-display text-3xl md:text-4xl lg:text-5xl font-bold text-brand-navy leading-tight mb-4">
 							Dr. Daksh Mutreja
 						</h2>
 
-						<p className="text-brand-green font-semibold text-lg mb-6">
+						<p className="hidden text-brand-green font-semibold text-lg mb-6">
 							MDS, Oral Medicine & Radiology | PG certificate
 							course in implantology, Karnataka
 						</p>
