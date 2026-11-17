@@ -1,18 +1,18 @@
 const stats = [
 	{
-		target: 500,
+		target: 1000,
 		label: "SUCCESSFUL SURGERIES",
 		sublabel: "Complex implant procedures",
 		color: "brand-blue",
 	},
 	{
-		target: 11,
+		target: 12,
 		label: "YEARS EXPERIENCE",
 		sublabel: "Dedicated dental care",
 		color: "brand-green",
 	},
 	{
-		target: 70,
+		target: 100,
 		label: "VOLUNTEER IMPLANTS",
 		sublabel: "For underprivileged patients",
 		color: "brand-blue",
@@ -24,12 +24,13 @@ const stats = [
 		color: "brand-green",
 	},
 	{
+		target: "0-20 minutes",
 		label: "MINIMAL WAITING TIME",
 		sublabel: "Dedicated dental care",
 		color: "brand-green",
 	},
 	{
-		target: 2500,
+		target: 3000,
 		label: "ROOT CANALS TREATED",
 		sublabel: "Dedicated dental care",
 		color: "brand-green",
@@ -77,10 +78,14 @@ export default function StatisticsSection() {
 								</svg>
 							</div>
 							<div
-								className={`text-4xl font-light ${stat.color === "brand-blue" ? "text-brand-blue" : "text-brand-green"} mb-2 counter-animate`}
-								data-target={stat.target}
+								className={`text-4xl font-light ${stat.color === "brand-blue" ? "text-brand-blue" : "text-brand-green"} mb-2 ${typeof stat.target === "number" ? "counter-animate" : ""}`}
+								{...(typeof stat.target === "number"
+									? { "data-target": stat.target }
+									: {})}
 							>
-								0+
+								{typeof stat.target === "number"
+									? "0+"
+									: stat.target}
 							</div>
 							<div className="text-gray-800 text-sm font-medium tracking-wide mb-1">
 								{stat.label}

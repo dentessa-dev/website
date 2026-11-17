@@ -1,28 +1,36 @@
+import Image from "next/image";
+
 const services = [
 	{
 		title: "Single Implants",
 		description:
 			"Individual tooth replacement with natural-looking crowns.",
+		image: "/single_implants.jpg",
 	},
 	{
 		title: "All-on-X",
 		description: "Full arch restoration with just 4-6 implants.",
+		image: "/all_on_x.jpg",
 	},
 	{
 		title: "Zygomatic and Pterygoid Implants",
 		description: "Advanced solution for severe bone loss cases.",
+		image: "/zygomatic_and_pterygoid_implants.jpg",
 	},
 	{
 		title: "Bone Grafting and sinus lift",
 		description: "Building strong foundations for successful implants.",
+		image: "/bone_grafting_and_sinus_lift.jpg",
 	},
 	{
 		title: "Immediate Loading",
 		description: "Same-day implants and temporary teeth.",
+		image: "/immediate_loading.jpg",
 	},
 	{
 		title: "Guided Surgery",
 		description: "AI-powered precision for optimal placement.",
+		image: "/guided_surgery.jpg",
 	},
 ];
 
@@ -51,14 +59,23 @@ export default function ServicesSection() {
 						{services.map((service, index) => (
 							<div
 								key={index}
-								className="bg-white/5 border border-white/10 p-4 lg:p-6 hover:bg-white/10 transition-colors"
+								className="overflow-hidden bg-white/5 border border-white/10 hover:bg-white/10 transition-colors"
 							>
-								<h3 className="font-semibold text-white text-sm lg:text-base mb-2">
-									{service.title}
-								</h3>
-								<p className="text-white/60 text-xs lg:text-sm leading-relaxed">
-									{service.description}
-								</p>
+								<Image
+									src={service.image}
+									alt={`${service.title} dental service`}
+									width={600}
+									height={360}
+									className="h-28 w-full object-cover lg:h-36"
+								/>
+								<div className="p-4 lg:p-6">
+									<h3 className="font-semibold text-white text-sm lg:text-base mb-2">
+										{service.title}
+									</h3>
+									<p className="text-white/60 text-xs lg:text-sm leading-relaxed">
+										{service.description}
+									</p>
+								</div>
 							</div>
 						))}
 					</div>

@@ -185,7 +185,7 @@ export default function HeroSection() {
 						<div className="flex gap-8 md:gap-12">
 							<div>
 								<div className="text-3xl md:text-4xl font-bold text-brand-blue">
-									11+
+									12+
 								</div>
 								<div className="text-sm text-white/60 tracking-wide">
 									Years Experience
@@ -193,7 +193,7 @@ export default function HeroSection() {
 							</div>
 							<div>
 								<div className="text-3xl md:text-4xl font-bold text-brand-green">
-									5000+
+									6000+
 								</div>
 								<div className="text-sm text-white/60 tracking-wide">
 									Happy Patients
@@ -201,7 +201,7 @@ export default function HeroSection() {
 							</div>
 							<div>
 								<div className="text-3xl md:text-4xl font-bold text-brand-blue">
-									500+
+									1000+
 								</div>
 								<div className="text-sm text-white/60 tracking-wide">
 									Implants Placed

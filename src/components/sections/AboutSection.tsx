@@ -145,7 +145,32 @@ export default function AboutSection() {
                 <span className="w-2 h-2 bg-brand-blue rounded-full mt-2 shrink-0"></span>
                 <span className="text-gray-700 text-sm lg:text-base">
                   4+ publications in various global journals
-                  
+                  <span className="mt-2 flex flex-col gap-1">
+                    <a
+                      href="https://www.researchgate.net/publication/360937540_BILATERAL_MANDIBULAR_IMPACTION_A_CASE_REPORT_AND_REVIEW_OF_LITERATURE_ARTICLE_INFO_ABSTRACT_CASE_REPORT"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="rounded-full border border-white/60 bg-white/30 px-4 py-2 text-center text-sm font-medium text-brand-blue shadow-sm backdrop-blur-md transition duration-300 hover:-translate-y-0.5 hover:border-white/90 hover:bg-white/60 hover:shadow-lg"
+                    >
+                      Publication 1
+                    </a>
+                    <a
+                      href="https://www.researchgate.net/publication/323320629_Assessment_of_Accuracy_and_Reliability_of_Linear_Measurements_of_CBCT-_An_in_vitro_study"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="rounded-full border border-white/60 bg-white/30 px-4 py-2 text-center text-sm font-medium text-brand-blue shadow-sm backdrop-blur-md transition duration-300 hover:-translate-y-0.5 hover:border-white/90 hover:bg-white/60 hover:shadow-lg"
+                    >
+                      Publication 2
+                    </a>
+                    <a
+                      href="https://www.researchgate.net/publication/323335700_MPNST_A_Rare_Yet_Ambiguous_LesionInternational_Journal_of_Tobacco_And_Oral_Health"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="rounded-full border border-white/60 bg-white/30 px-4 py-2 text-center text-sm font-medium text-brand-blue shadow-sm backdrop-blur-md transition duration-300 hover:-translate-y-0.5 hover:border-white/90 hover:bg-white/60 hover:shadow-lg"
+                    >
+                      Publication 3
+                    </a>
+                  </span>
                 </span>
               </div>
             </div>

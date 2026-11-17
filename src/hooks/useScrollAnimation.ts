@@ -11,6 +11,7 @@ export function useScrollAnimation() {
 
 		const animateCounter = (element: Element) => {
 			const target = parseInt(element.getAttribute("data-target") || "0");
+			const suffix = element.getAttribute("data-suffix") || "+";
 			const steps = 80;
 			const increment = target / steps;
 			let current = 0;
@@ -22,13 +23,13 @@ export function useScrollAnimation() {
 					if (element.textContent?.includes("%")) {
 						element.textContent = `${Math.round(current)}%`;
 					} else {
-						element.textContent = `${Math.round(current)}+`;
+						element.textContent = `${Math.round(current)}${suffix}`;
 					}
 				} else {
 					if (element.textContent?.includes("%")) {
 						element.textContent = `${Math.round(current)}%`;
 					} else {
-						element.textContent = `${Math.round(current)}+`;
+						element.textContent = `${Math.round(current)}${suffix}`;
 					}
 					requestAnimationFrame(updateCounter);
 				}
