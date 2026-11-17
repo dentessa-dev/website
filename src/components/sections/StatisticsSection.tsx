@@ -18,7 +18,7 @@ const stats = [
 		color: "brand-blue",
 	},
 	{
-		target: 5000,
+		target: 10000,
 		label: "PATIENTS TREATED",
 		sublabel: "Dedicated dental care",
 		color: "brand-green",
