@@ -6,16 +6,16 @@ const teamMembers = [
 		experience: "13 years experience",
 		image: "/salman.jpeg",
 		specialties: [
-			"TMJ Disorders",
-			"Periodontal Treatment",
+			"Gum Disease Treatment",
 			"Dental Implants",
-			"Major Maxillofacial Surgeries",
-			"Minor Oral Surgery",
-			"Fracture of Jaws",
-			"Benign Tumor Management",
-			"Scar Revisions",
-			"Facial Lacerations",
-			"Cosmetic Repair",
+			"Bone Grafting",
+			"Sinus Lift Procedures",
+			"Gum Grafting",
+			"Periodontal Surgery",
+			"Regenerative Periodontics",
+			"Peri-Implantitis Treatment",
+			"Crown Lengthening",
+			"Laser Periodontal Therapy",
 		],
 		description:
 			"Specialized periodontist with extensive experience in gum disease treatment, dental implants, and oral surgery procedures.",
@@ -58,6 +58,24 @@ const teamMembers = [
 		description:
 			"Comprehensive orthodontic specialist with 12 years of experience delivering orthodontic care to pediatric and adult patients. Treated more than 3000+ cases of fixed orthodontics and myofunctional therapy. Invisalign certified doctor with expertise in traditional braces, digital corrections, and growth modifications.",
 	},
+	{
+		name: "Dr. Pragya SV",
+		title: "Pediatric Dentist",
+		qualifications: "BDS, MDS - Pediatric Dentistry",
+		experience: "Experienced in pediatric dental care",
+		image: "/dr. pragya sv.jpeg",
+		linkedin: "https://share.google/dCtvJCWd4nPzm0rkk",
+		specialties: [
+			"Child and Adolescent Dentistry",
+			"Preventive Dental Care",
+			"Oral Health Education",
+			"Early Childhood Caries",
+			"Comfortable Dental Visits",
+			"Comprehensive Pediatric Care",
+		],
+		description:
+			"Experienced in providing comprehensive dental care for children and adolescents by creating a comforting environment for young patients while addressing a wide range of dental issues. Committed to promoting oral health education and preventive care.",
+	},
 ];
 
 export default function TeamSection() {
@@ -81,7 +99,7 @@ export default function TeamSection() {
 				</div>
 
 				{/* Team Members Grid */}
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
 					{teamMembers.map((member, index) => (
 						<div
 							key={index}
@@ -114,6 +132,16 @@ export default function TeamSection() {
 									<p className="text-gray-500 text-sm">
 										{member.experience}
 									</p>
+									{"linkedin" in member && (
+										<a
+											href={member.linkedin}
+											target="_blank"
+											rel="noreferrer"
+											className="inline-block mt-2 text-brand-blue text-sm font-medium hover:underline"
+										>
+											View LinkedIn Profile
+										</a>
+									)}
 								</div>
 
 								<p className="text-gray-600 text-base leading-relaxed mb-6">

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const reviews = [
 	{
 		name: "Abhishek Kumar",
@@ -99,6 +101,87 @@ export default function ReviewsSection() {
 							</div>
 						</div>
 					))}
+				</div>
+
+				<div className="mt-16">
+					<div className="text-center mb-10">
+						<h3 className="text-2xl md:text-3xl font-light text-gray-800 tracking-wide">
+							PATIENT RESULTS & VIDEO REVIEWS
+						</h3>
+						<p className="text-gray-500 mt-3 font-light">
+							Explore treatment results and hear directly from our patients.
+						</p>
+					</div>
+
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+						{[
+							["/before1.jpeg", "/after1.png", "Treatment Result 1"],
+							["/before2.png", "/after2.jpeg", "Treatment Result 2"],
+						].map(([before, after, label]) => (
+							<div
+								key={label}
+								className="rounded-2xl border border-gray-100 bg-gray-50 p-4 shadow-md"
+							>
+								<h4 className="mb-3 text-center font-medium text-brand-navy">
+									{label}
+								</h4>
+								<div className="grid grid-cols-2 gap-3">
+									<div className="overflow-hidden rounded-xl bg-white">
+										<Image
+											src={before}
+											alt={`${label} before treatment`}
+											width={600}
+											height={450}
+											className="h-40 w-full object-cover"
+										/>
+										<p className="py-2 text-center text-xs font-medium uppercase tracking-wide text-gray-500">
+											Before
+										</p>
+									</div>
+									<div className="overflow-hidden rounded-xl bg-white">
+										<Image
+											src={after}
+											alt={`${label} after treatment`}
+											width={600}
+											height={450}
+											className="h-40 w-full object-cover"
+										/>
+										<p className="py-2 text-center text-xs font-medium uppercase tracking-wide text-brand-blue">
+											After
+										</p>
+									</div>
+								</div>
+							</div>
+						))}
+					</div>
+
+					<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+						{[
+							["/review1.mp4", "Patient Video Review 1"],
+							["/review2.mp4", "Patient Video Review 2"],
+							["/testimonial1 - Trim.mp4", "Patient Testimonial 1"],
+							["/testimonial2 - Trim.mp4", "Patient Testimonial 2"],
+						].map(([video, label]) => (
+							<div
+								key={video}
+								className="overflow-hidden rounded-2xl border border-gray-100 bg-white p-3 shadow-md"
+							>
+								<video
+									controls
+									muted
+									playsInline
+									preload="metadata"
+									className="h-64 w-full rounded-xl bg-brand-navy object-cover"
+								>
+									<source src={video} type="video/mp4" />
+									Your browser does not support video playback.
+								</video>
+								<p className="px-1 pt-3 text-center text-sm font-medium text-brand-navy">
+									{label}
+								</p>
+							</div>
+						))}
+					</div>
 				</div>
 
 				<div className="text-center mt-16">
