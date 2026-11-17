@@ -74,7 +74,7 @@ export default function HeroSection() {
 								</svg>
 							</a>
 							<a
-								href="https://wa.me/917406261890"
+								href="https://wa.me/918660603183"
 								target="_blank"
 								rel="noreferrer"
 								aria-label="Chat on WhatsApp"
